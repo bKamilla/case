@@ -1,3 +1,98 @@
-print("Hello")
-a=7
-print(a)
+import turtle
+
+def square( a, b):
+
+    turtle.up()
+    turtle.left(135)
+    turtle.down()
+    turtle.left(45)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+
+def square1( a, b):
+
+    turtle.up()
+    turtle.left(180)
+    turtle.down()
+    turtle.forward(b)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(90)
+    turtle.forward(a)
+
+def square2(x, y, a, b):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(90)
+    turtle.forward(a)
+
+def square3(x, y, a, b):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.left(90)
+    turtle.down()
+    turtle.forward(b)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(90)
+    turtle.forward(a)
+
+def trapezoid(x, y, a, b,c):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.forward(a)
+    turtle.right(70)
+    turtle.forward(c)
+    turtle.right(110)
+    turtle.forward(b)
+    turtle.right(110)
+    turtle.forward(c)
+
+def trapezoid1(x, y, a, b,c):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.right(71)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(b)
+    turtle.right(90)
+    turtle.forward(c)
+    turtle.setposition(x, y)
+
+def trapezoid2(x, y, a, b,c):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.forward(a)
+    turtle.left(90)
+    turtle.forward(b)
+    turtle.left(90)
+    turtle.forward(c)
+    turtle.setposition(x, y)
+
+square(10, 40)
+square1(100, 60)
+square2(100,0,10,40)
+square3(60,0,20,10)
+trapezoid(20, -10, 60, 128,100)
+trapezoid1(20, -104, 20, 50,40)
+trapezoid2(80, -104, 20, 50,40)
+turtle.exitonclick()
